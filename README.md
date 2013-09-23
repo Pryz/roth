@@ -1,7 +1,10 @@
 # Use puppet in DMZ
 
+Work in progress
+
 ## Purpose 
     Give the possibility for DMZ server to use Puppet manifests.
+    Using Git workflow
 
 ## The workflow
     Developper -> modules-dmz
@@ -10,17 +13,14 @@
 
 ## Cli commands example
 
-    $ roth apply dmz1.domain.local sudoers
-    $ roth getlog dmz1.domain.local
-    $ roth pushonly dmz1.domain.local sudoers
-    $ roth applyonly dmz1.domain.local sudoers
+[TODO]
 
 ## Create roth user
 
     $ useradd roth
     $ usermod -d /etc/puppet roth
     $ usermod -aG puppet roth
-    $ cat ~/.ssh/id_rsa.pub | ssh root@ctsr0523.vallourec.net \
+    $ cat ~/.ssh/id_rsa.pub | ssh root@hostname \
      'cat >> ~roth/.ssh/authorized_keys'
 
 ## Masterless
